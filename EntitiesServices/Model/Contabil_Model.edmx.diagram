@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="60275ba755ff4e87b437d98cbb67de72" Name="Diagram1">
+        <EntityTypeShape EntityType="DB_ContabilModel.AGENDA" Width="1.5" PointX="7.5" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.AGENDA_ANEXO" Width="1.5" PointX="9.75" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.ASSINANTE" Width="1.5" PointX="3" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CARGO" Width="1.5" PointX="8.25" PointY="36.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CATEGORIA_AGENDA" Width="1.5" PointX="5.25" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CATEGORIA_NOTIFICACAO" Width="1.5" PointX="5.25" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CATEGORIA_TELEFONE" Width="1.5" PointX="5.25" PointY="26.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CATEGORIA_USUARIO" Width="1.5" PointX="5.25" PointY="29.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CONFIGURACAO" Width="1.5" PointX="5.25" PointY="32.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.LOG" Width="1.5" PointX="12.75" PointY="32.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.NOTICIA" Width="1.5" PointX="5.25" PointY="37" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.NOTICIA_COMENTARIO" Width="1.5" PointX="12.75" PointY="36.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.NOTIFICACAO" Width="1.5" PointX="10.5" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.NOTIFICACAO_ANEXO" Width="1.5" PointX="12.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.PERFIL" Width="1.5" PointX="8.25" PointY="39.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.PERIODICIDADE" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.PERIODICIDADE_TAREFA" Width="1.5" PointX="5.25" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TAREFA" Width="1.5" PointX="15.75" PointY="36.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TAREFA_ACOMPANHAMENTO" Width="1.5" PointX="18" PointY="35.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TAREFA_ANEXO" Width="1.5" PointX="18" PointY="41.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TELEFONE" Width="1.5" PointX="7.5" PointY="31.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TEMPLATE" Width="1.5" PointX="5.25" PointY="44.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TIPO_AGENDA" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TIPO_MENSAGEM" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TIPO_PESSOA" Width="1.5" PointX="0.75" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TIPO_TAREFA" Width="1.5" PointX="5.25" PointY="49.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.UF" Width="1.5" PointX="0.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.USUARIO" Width="1.5" PointX="10.5" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.USUARIO_ANEXO" Width="1.5" PointX="12.75" PointY="48.75" IsExpanded="true" />
+        <AssociationConnector Association="DB_ContabilModel.FK_AGENDA_ANEXO_AGENDA" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_AGENDA_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_AGENDA_CATEGORIA_AGENDA" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_AGENDA_USUARIO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_AGENDA_USUARIO1" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_ASSINANTE_TIPO_PESSOA" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_ASSINANTE_UF" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CATEGORIA_AGENDA_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CATEGORIA_NOTIFICACAO_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CATEGORIA_TELEFONE_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CATEGORIA_USUARIO_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CONFIGURACAO_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_LOG_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_NOTICIA_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_NOTIFICACAO_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_PERIODICIDADE_TAREFA_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_TAREFA_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_TELEFONE_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_TEMPLATE_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_TIPO_TAREFA_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_USUARIO_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_USUARIO_CARGO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_NOTIFICACAO_CATEGORIA_NOTIFICACAO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_TELEFONE_CATEGORIA_TELEFONE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_USUARIO_CATEGORIA_USUARIO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_LOG_USUARIO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_NOTICIA_COMENTARIO_NOTICIA" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_NOTICIA_COMENTARIO_USUARIO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_NOTIFICACAO_ANEXO_NOTIFICACAO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_NOTIFICACAO_USUARIO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_USUARIO_PERFIL" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_TAREFA_PERIODICIDADE_TAREFA" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_TAREFA_ACOMPANHAMENTO_TAREFA" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_TAREFA_ANEXO_TAREFA" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_TAREFA_TIPO_TAREFA" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_TAREFA_USUARIO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_TAREFA_ACOMPANHAMENTO_USUARIO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_TELEFONE_UF" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_USUARIO_ANEXO_USUARIO" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
