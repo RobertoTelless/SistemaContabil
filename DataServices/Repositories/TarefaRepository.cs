@@ -54,7 +54,6 @@ namespace DataServices.Repositories
         {
             IQueryable<TAREFA> query = Db.TAREFA;
             query = query.Where(p => p.TARE_CD_ID == id);
-            query = query.Include(p => p.TAREFA_NOTIFICACAO);
             query = query.Include(p => p.USUARIO);
             return query.FirstOrDefault();
         }

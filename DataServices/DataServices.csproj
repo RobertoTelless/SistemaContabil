@@ -196,9 +196,7 @@
     <Compile Include="Repositories\CategoriaUsuarioRepository.cs" />
     <Compile Include="Repositories\ClienteAnexoRepository.cs" />
     <Compile Include="Repositories\ClienteCnpjRepository.cs" />
-    <Compile Include="Repositories\MetadadoRepository.cs" />
     <Compile Include="Repositories\ClienteContatoRepository.cs" />
-    <Compile Include="Repositories\ClasseRepository.cs" />
     <Compile Include="Repositories\ClienteRepository.cs" />
     <Compile Include="Repositories\ClienteComentarioRepository.cs" />
     <Compile Include="Repositories\PeriodicidadeRepository.cs" />
@@ -215,11 +213,9 @@
     <Compile Include="Repositories\PerfilRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
     <Compile Include="Repositories\TarefaAnexoRepository.cs" />
-    <Compile Include="Repositories\TarefaNotificacaoRepository.cs" />
     <Compile Include="Repositories\TarefaRepository.cs" />
     <Compile Include="Repositories\TemplateRepository.cs" />
     <Compile Include="Repositories\TipoPessoaRepository.cs" />
-    <Compile Include="Repositories\TipoDocumentoRepository.cs" />
     <Compile Include="Repositories\TipoTarefaRepository.cs" />
     <Compile Include="Repositories\UFRepository.cs" />
     <Compile Include="Repositories\UsuarioAnexoRepository.cs" />

@@ -175,6 +175,9 @@
         <AssociationConnector Association="DB_ContabilModel.FK_TAREFA_ACOMPANHAMENTO_USUARIO" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_TELEFONE_UF" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_USUARIO_ANEXO_USUARIO" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CLIENTE_ANOTACAO" Width="1.5" PointX="21.75" PointY="89.125" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CLIENTE_ANOTACAO_CLIENTE" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CLIENTE_ANOTACAO_USUARIO" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

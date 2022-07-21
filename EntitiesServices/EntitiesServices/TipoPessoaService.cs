@@ -20,7 +20,7 @@ namespace ModelServices.EntitiesServices
     {
         private readonly ITipoPessoaRepository _baseRepository;
         private readonly ILogRepository _logRepository;
-        protected Db_GEDEntities Db = new Db_GEDEntities();
+        protected DB_ContabilEntities Db = new DB_ContabilEntities();
 
         public TipoPessoaService(ITipoPessoaRepository baseRepository, ILogRepository logRepository) : base(baseRepository)
         {

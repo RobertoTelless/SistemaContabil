@@ -44,7 +44,7 @@ namespace ApplicationServices.Services
             try
             {
                 // Completa objeto
-                item.FOQS_IN_ATIVO = 1;
+                item.CLQS_IN_ATIVO = 1;
 
                 // Persiste
                 Int32 volta = _baseService.Create(item);

@@ -21,7 +21,7 @@ namespace ModelServices.EntitiesServices
         private readonly IPerfilRepository _perfilRepository;
         private readonly ILogRepository _logRepository;
         private readonly IConfiguracaoRepository _configuracaoRepository;
-        protected Db_GEDEntities Db = new Db_GEDEntities();
+        protected DB_ContabilEntities Db = new DB_ContabilEntities();
 
         public PerfilService(IPerfilRepository perfilRepository, ILogRepository logRepository, IConfiguracaoRepository configuracaoRepository) : base(perfilRepository)
         {

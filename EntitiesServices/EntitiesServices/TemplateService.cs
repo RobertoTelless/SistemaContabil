@@ -20,7 +20,7 @@ namespace ModelServices.EntitiesServices
     {
         private readonly ITemplateRepository _baseRepository;
         private readonly ILogRepository _logRepository;
-        protected Db_GEDEntities Db = new Db_GEDEntities();
+        protected DB_ContabilEntities Db = new DB_ContabilEntities();
 
         public TemplateService(ITemplateRepository baseRepository, ILogRepository logRepository) : base(baseRepository)
         {

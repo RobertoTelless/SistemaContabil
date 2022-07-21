@@ -19,7 +19,7 @@ namespace ModelServices.EntitiesServices
     public class LogService : ServiceBase<LOG>, ILogService
     {
         private readonly ILogRepository _logRepository;
-        protected Db_GEDEntities Db = new Db_GEDEntities();
+        protected DB_ContabilEntities Db = new DB_ContabilEntities();
 
         public LogService(ILogRepository logRepository) : base(logRepository)
         {

@@ -218,13 +218,10 @@
     <Compile Include="Interfaces\Repositories\ICategoriaUsuarioRepository.cs" />
     <Compile Include="Interfaces\Repositories\IClienteAnexoRepository.cs" />
     <Compile Include="Interfaces\Repositories\IClienteCnpjRepository.cs" />
-    <Compile Include="Interfaces\Repositories\IMetadadoRepository.cs" />
     <Compile Include="Interfaces\Repositories\IClienteContatoRepository.cs" />
-    <Compile Include="Interfaces\Repositories\IClasseRepository.cs" />
     <Compile Include="Interfaces\Repositories\IClienteRepository.cs" />
     <Compile Include="Interfaces\Repositories\IClienteComentarioRepository.cs" />
     <Compile Include="Interfaces\Repositories\IPeriodicidadeRepository.cs" />
-    <Compile Include="Interfaces\Repositories\ITipoDocumentoRepository.cs" />
     <Compile Include="Interfaces\Repositories\ICategoriaTelefoneRepository.cs" />
     <Compile Include="Interfaces\Repositories\ITelefoneRepository.cs" />
     <Compile Include="Interfaces\Repositories\ICategoriaAgendaRepository.cs" />
@@ -248,7 +245,6 @@
     <Compile Include="Interfaces\Services\IAgendaService.cs" />
     <Compile Include="Interfaces\Services\IAssinanteService.cs" />
     <Compile Include="Interfaces\Services\ICategoriaTelefoneService.cs" />
-    <Compile Include="Interfaces\Services\IClasseService.cs" />
     <Compile Include="Interfaces\Services\IConfiguracaoService.cs" />
     <Compile Include="Interfaces\Services\IClienteCnpjService.cs" />
     <Compile Include="Interfaces\Services\IClienteService.cs" />
@@ -305,6 +301,9 @@
       <DependentUpon>Contabil_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\CLIENTE_ANEXO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CLIENTE_ANOTACAO.cs">
       <DependentUpon>Contabil_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\CLIENTE_CONTATO.cs">

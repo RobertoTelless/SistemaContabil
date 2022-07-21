@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DB_ContabilModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DB_ContabilModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="AGENDA">
           <Key>
             <PropertyRef Name="AGEN_CD_ID" />
@@ -229,6 +229,17 @@
           <Property Name="CLAN_IN_TIPO" Type="int" Nullable="false" />
           <Property Name="CLAN_DT_ANEXO" Type="date" Nullable="false" />
           <Property Name="CLAN_AQ_ARQUIVO" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="CLAN_IN_ATIVO" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CLIENTE_ANOTACAO">
+          <Key>
+            <PropertyRef Name="CLAN_CD_ID" />
+          </Key>
+          <Property Name="CLAN_CD_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CLIE_CD_ID" Type="int" Nullable="false" />
+          <Property Name="CLAN_DT_ANOTACAO" Type="datetime" Nullable="false" />
+          <Property Name="USUA_CD_ID" Type="int" Nullable="false" />
+          <Property Name="CLAN_TX_ANOTACAO" Type="text" />
           <Property Name="CLAN_IN_ATIVO" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="CLIENTE_CONTATO">
@@ -1248,6 +1259,30 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_CLIENTE_ANOTACAO_CLIENTE">
+          <End Role="CLIENTE" Type="Self.CLIENTE" Multiplicity="1" />
+          <End Role="CLIENTE_ANOTACAO" Type="Self.CLIENTE_ANOTACAO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLIENTE">
+              <PropertyRef Name="CLIE_CD_ID" />
+            </Principal>
+            <Dependent Role="CLIENTE_ANOTACAO">
+              <PropertyRef Name="CLIE_CD_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CLIENTE_ANOTACAO_USUARIO">
+          <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="1" />
+          <End Role="CLIENTE_ANOTACAO" Type="Self.CLIENTE_ANOTACAO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USUARIO">
+              <PropertyRef Name="USUA_CD_ID" />
+            </Principal>
+            <Dependent Role="CLIENTE_ANOTACAO">
+              <PropertyRef Name="USUA_CD_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_CLIENTE_ASSINANTE">
           <End Role="ASSINANTE" Type="Self.ASSINANTE" Multiplicity="1" />
           <End Role="CLIENTE" Type="Self.CLIENTE" Multiplicity="*" />
@@ -2260,6 +2295,7 @@
           <EntitySet Name="CENTRO_CUSTO" EntityType="Self.CENTRO_CUSTO" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CLIENTE" EntityType="Self.CLIENTE" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CLIENTE_ANEXO" EntityType="Self.CLIENTE_ANEXO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CLIENTE_ANOTACAO" EntityType="Self.CLIENTE_ANOTACAO" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CLIENTE_CONTATO" EntityType="Self.CLIENTE_CONTATO" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CLIENTE_QUADRO_SOCIETARIO" EntityType="Self.CLIENTE_QUADRO_SOCIETARIO" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CLIENTE_REFERENCIA" EntityType="Self.CLIENTE_REFERENCIA" Schema="dbo" store:Type="Tables" />
@@ -2388,6 +2424,14 @@
           <AssociationSet Name="FK_CLIENTE_ANEXO_CLIENTE" Association="Self.FK_CLIENTE_ANEXO_CLIENTE">
             <End Role="CLIENTE" EntitySet="CLIENTE" />
             <End Role="CLIENTE_ANEXO" EntitySet="CLIENTE_ANEXO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CLIENTE_ANOTACAO_CLIENTE" Association="Self.FK_CLIENTE_ANOTACAO_CLIENTE">
+            <End Role="CLIENTE" EntitySet="CLIENTE" />
+            <End Role="CLIENTE_ANOTACAO" EntitySet="CLIENTE_ANOTACAO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CLIENTE_ANOTACAO_USUARIO" Association="Self.FK_CLIENTE_ANOTACAO_USUARIO">
+            <End Role="USUARIO" EntitySet="USUARIO" />
+            <End Role="CLIENTE_ANOTACAO" EntitySet="CLIENTE_ANOTACAO" />
           </AssociationSet>
           <AssociationSet Name="FK_CLIENTE_ASSINANTE" Association="Self.FK_CLIENTE_ASSINANTE">
             <End Role="ASSINANTE" EntitySet="ASSINANTE" />
@@ -2722,8 +2766,7 @@
             <End Role="USUARIO" EntitySet="USUARIO" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DB_ContabilModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -3011,6 +3054,7 @@
           <NavigationProperty Name="UF" Relationship="Self.FK_CLIENTE_UF" FromRole="CLIENTE" ToRole="UF" />
           <NavigationProperty Name="UF1" Relationship="Self.FK_CLIENTE_UF1" FromRole="CLIENTE" ToRole="UF" />
           <NavigationProperty Name="USUARIO" Relationship="Self.FK_CLIENTE_USUARIO" FromRole="CLIENTE" ToRole="USUARIO" />
+          <NavigationProperty Name="CLIENTE_ANOTACAO" Relationship="DB_ContabilModel.FK_CLIENTE_ANOTACAO_CLIENTE" FromRole="CLIENTE" ToRole="CLIENTE_ANOTACAO" />
         </EntityType>
         <EntityType Name="CLIENTE_ANEXO">
           <Key>
@@ -3932,6 +3976,7 @@
           <NavigationProperty Name="TAREFA" Relationship="Self.FK_TAREFA_USUARIO" FromRole="USUARIO" ToRole="TAREFA" />
           <NavigationProperty Name="TAREFA_ACOMPANHAMENTO" Relationship="Self.FK_TAREFA_ACOMPANHAMENTO_USUARIO" FromRole="USUARIO" ToRole="TAREFA_ACOMPANHAMENTO" />
           <NavigationProperty Name="USUARIO_ANEXO" Relationship="Self.FK_USUARIO_ANEXO_USUARIO" FromRole="USUARIO" ToRole="USUARIO_ANEXO" />
+          <NavigationProperty Name="CLIENTE_ANOTACAO" Relationship="DB_ContabilModel.FK_CLIENTE_ANOTACAO_USUARIO" FromRole="USUARIO" ToRole="CLIENTE_ANOTACAO" />
         </EntityType>
         <EntityType Name="USUARIO_ANEXO">
           <Key>
@@ -5647,7 +5692,53 @@
             <End Role="USUARIO" EntitySet="USUARIO" />
             <End Role="USUARIO_ANEXO" EntitySet="USUARIO_ANEXO" />
           </AssociationSet>
+          <EntitySet Name="CLIENTE_ANOTACAO" EntityType="DB_ContabilModel.CLIENTE_ANOTACAO" />
+          <AssociationSet Name="FK_CLIENTE_ANOTACAO_CLIENTE" Association="DB_ContabilModel.FK_CLIENTE_ANOTACAO_CLIENTE">
+            <End Role="CLIENTE" EntitySet="CLIENTE" />
+            <End Role="CLIENTE_ANOTACAO" EntitySet="CLIENTE_ANOTACAO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CLIENTE_ANOTACAO_USUARIO" Association="DB_ContabilModel.FK_CLIENTE_ANOTACAO_USUARIO">
+            <End Role="USUARIO" EntitySet="USUARIO" />
+            <End Role="CLIENTE_ANOTACAO" EntitySet="CLIENTE_ANOTACAO" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="CLIENTE_ANOTACAO">
+          <Key>
+            <PropertyRef Name="CLAN_CD_ID" />
+          </Key>
+          <Property Name="CLAN_CD_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CLIE_CD_ID" Type="Int32" Nullable="false" />
+          <Property Name="CLAN_DT_ANOTACAO" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="USUA_CD_ID" Type="Int32" Nullable="false" />
+          <Property Name="CLAN_TX_ANOTACAO" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CLAN_IN_ATIVO" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="CLIENTE" Relationship="DB_ContabilModel.FK_CLIENTE_ANOTACAO_CLIENTE" FromRole="CLIENTE_ANOTACAO" ToRole="CLIENTE" />
+          <NavigationProperty Name="USUARIO" Relationship="DB_ContabilModel.FK_CLIENTE_ANOTACAO_USUARIO" FromRole="CLIENTE_ANOTACAO" ToRole="USUARIO" />
+        </EntityType>
+        <Association Name="FK_CLIENTE_ANOTACAO_CLIENTE">
+          <End Type="DB_ContabilModel.CLIENTE" Role="CLIENTE" Multiplicity="1" />
+          <End Type="DB_ContabilModel.CLIENTE_ANOTACAO" Role="CLIENTE_ANOTACAO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLIENTE">
+              <PropertyRef Name="CLIE_CD_ID" />
+            </Principal>
+            <Dependent Role="CLIENTE_ANOTACAO">
+              <PropertyRef Name="CLIE_CD_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CLIENTE_ANOTACAO_USUARIO">
+          <End Type="DB_ContabilModel.USUARIO" Role="USUARIO" Multiplicity="1" />
+          <End Type="DB_ContabilModel.CLIENTE_ANOTACAO" Role="CLIENTE_ANOTACAO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USUARIO">
+              <PropertyRef Name="USUA_CD_ID" />
+            </Principal>
+            <Dependent Role="CLIENTE_ANOTACAO">
+              <PropertyRef Name="USUA_CD_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -6734,6 +6825,18 @@
                 <ScalarProperty Name="USAN_IN_TIPO" ColumnName="USAN_IN_TIPO" />
                 <ScalarProperty Name="USAN_IN_ATIVO" ColumnName="USAN_IN_ATIVO" />
                 <ScalarProperty Name="USAN_AQ_ARQUIVO" ColumnName="USAN_AQ_ARQUIVO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CLIENTE_ANOTACAO">
+            <EntityTypeMapping TypeName="DB_ContabilModel.CLIENTE_ANOTACAO">
+              <MappingFragment StoreEntitySet="CLIENTE_ANOTACAO">
+                <ScalarProperty Name="CLAN_IN_ATIVO" ColumnName="CLAN_IN_ATIVO" />
+                <ScalarProperty Name="CLAN_TX_ANOTACAO" ColumnName="CLAN_TX_ANOTACAO" />
+                <ScalarProperty Name="USUA_CD_ID" ColumnName="USUA_CD_ID" />
+                <ScalarProperty Name="CLAN_DT_ANOTACAO" ColumnName="CLAN_DT_ANOTACAO" />
+                <ScalarProperty Name="CLIE_CD_ID" ColumnName="CLIE_CD_ID" />
+                <ScalarProperty Name="CLAN_CD_ID" ColumnName="CLAN_CD_ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

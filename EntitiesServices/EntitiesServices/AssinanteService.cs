@@ -22,7 +22,7 @@ namespace ModelServices.EntitiesServices
         private readonly ILogRepository _logRepository;
         private readonly ITipoPessoaRepository _tpRepository;
         private readonly IUFRepository _ufRepository;
-        protected Db_GEDEntities Db = new Db_GEDEntities();
+        protected DB_ContabilEntities Db = new DB_ContabilEntities();
 
         public AssinanteService(IAssinanteRepository baseRepository, ILogRepository logRepository, ITipoPessoaRepository tpRepository, IUFRepository ufRepository) : base(baseRepository)
         {

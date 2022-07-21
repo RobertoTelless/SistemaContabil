@@ -23,7 +23,7 @@ namespace ModelServices.EntitiesServices
         private readonly ICategoriaAgendaRepository _tipoRepository;
         private readonly IAgendaAnexoRepository _anexoRepository;
 
-        protected Db_GEDEntities Db = new Db_GEDEntities();
+        protected DB_ContabilEntities Db = new DB_ContabilEntities();
 
         public AgendaService(IAgendaRepository baseRepository, ILogRepository logRepository, ICategoriaAgendaRepository tipoRepository, IAgendaAnexoRepository anexoRepository) : base(baseRepository)
         {

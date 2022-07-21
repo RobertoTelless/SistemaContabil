@@ -27,7 +27,7 @@ namespace ModelServices.EntitiesServices
         private readonly IUFRepository _ufRepository;
         private readonly IUsuarioRepository _usuRepository;
         private readonly IClienteComentarioRepository _comRepository;
-        protected Db_GEDEntities Db = new Db_GEDEntities();
+        protected DB_ContabilEntities Db = new DB_ContabilEntities();
 
         public ClienteService(IClienteRepository baseRepository, ILogRepository logRepository, ICategoriaClienteRepository tipoRepository, IClienteAnexoRepository anexoRepository, ITipoPessoaRepository pesRepository, IClienteContatoRepository contRepository, IUFRepository ufRepository, IUsuarioRepository usuRepository, IClienteComentarioRepository comRepository) : base(baseRepository)
         {

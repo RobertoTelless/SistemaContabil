@@ -22,7 +22,7 @@ namespace ModelServices.EntitiesServices
         private readonly ILogRepository _logRepository;
         private readonly ICategoriaTelefoneRepository _tipoRepository;
         private readonly IUFRepository _ufRepository;
-        protected Db_GEDEntities Db = new Db_GEDEntities();
+        protected DB_ContabilEntities Db = new DB_ContabilEntities();
 
         public TelefoneService(ITelefoneRepository baseRepository, ILogRepository logRepository, ICategoriaTelefoneRepository tipoRepository, IUFRepository ufRepository) : base(baseRepository)
         {

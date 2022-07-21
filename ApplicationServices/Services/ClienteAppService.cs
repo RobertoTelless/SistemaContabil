@@ -277,10 +277,10 @@ namespace ApplicationServices.Services
             try
             {
                 // Verifica integridade referencial
-                if (item.DOCUMENTO.Count > 0)
-                {
-                    return 1;
-                }
+                //if (item.DOCUMENTO.Count > 0)
+                //{
+                //    return 1;
+                //}
 
                 // Acerta campos
                 item.CLIE_IN_ATIVO = 0;

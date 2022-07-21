@@ -27,7 +27,7 @@ namespace ModelServices.EntitiesServices
         private readonly INotificacaoRepository _notRepository;
         private readonly INoticiaRepository _ntcRepository;
         private readonly ICargoRepository _carRepository;
-        protected Db_GEDEntities Db = new Db_GEDEntities();
+        protected DB_ContabilEntities Db = new DB_ContabilEntities();
 
         public UsuarioService(IUsuarioRepository usuarioRepository, ILogRepository logRepository, IConfiguracaoRepository configuracaoRepository, IPerfilRepository perfRepository, ITemplateRepository tempRepository, IUsuarioAnexoRepository anexoRepository, INotificacaoRepository notRepository, INoticiaRepository ntcRepository, ICargoRepository carRepository) : base(usuarioRepository)
         {

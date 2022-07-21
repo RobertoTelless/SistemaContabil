@@ -21,7 +21,7 @@ namespace ModelServices.EntitiesServices
         private readonly INoticiaRepository _baseRepository;
         private readonly ILogRepository _logRepository;
         private readonly INoticiaComentarioRepository _comRepository;
-        protected Db_GEDEntities Db = new Db_GEDEntities();
+        protected DB_ContabilEntities Db = new DB_ContabilEntities();
 
         public NoticiaService(INoticiaRepository baseRepository, ILogRepository logRepository, INoticiaComentarioRepository comRepository) : base(baseRepository)
         {
