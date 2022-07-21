@@ -30,10 +30,6 @@
 
                         <div class="text-center">
                             @Html.ButtonLinkIndex(text: "Perfil", action: "MontarTelaPerfilUsuario", controller: "Usuario", buttonClass: "btn btn-xs btn-white")
-                            @*@if (Model.PERFIL.PERF_SG_SIGLA == "ADM")
-                            {
-                                @Html.ButtonLinkIndex(text: "Dashboard Pessoal", action: "CarregarDashPessoal", controller: "BaseAdmin", buttonClass: "btn btn-xs btn-primary")
-                            }*@
                         </div>
                     </div>
                 </div>
@@ -91,26 +87,16 @@
                             </div>
                         </div>
                     </div>
-                    @if (ViewBag.Perfil == "ADM" || (Int32)Session["UsuPortaria"] == 1)
+                    @Html.ButtonLinkIndex(text: "Cadastros", action: "MontarTelaDashboardCadastros", controller: "BaseAdmin", buttonClass: "primary")
+                    @if (ViewBag.Perfil != "VEN" & ViewBag.Perfil != "VIS")
                     {
-                        @Html.ButtonLinkIndex(text: "Portaria", action: "CarregarPortaria", controller: "BaseAdmin", buttonClass: "primary")
+                        @Html.ButtonLinkIndex(text: "Financeiro", action: "MontarTelaDashboardFinanceiro", controller: "BaseAdmin", buttonClass: "success")
                     }
-                    @if (ViewBag.Perfil == "ADM" || (Int32)Session["UsuMorador"] == 1)
+                    @if (ViewBag.Perfil == "ADM" || ViewBag.Perfil == "GER")
                     {
-                        @Html.ButtonLinkIndex(text: "Morador", action: "CarregarMorador", controller: "BaseAdmin", buttonClass: "primary")
+                        @Html.ButtonLinkIndex(text: "Administração", action: "MontarTelaDashboardAdministracao", controller: "BaseAdmin", buttonClass: "success")
                     }
-                    @if (ViewBag.Perfil == "ADM" || (Int32)Session["UsuSindico"] == 1)
-                    {
-                        @Html.ButtonLinkIndex(text: "Síndico", action: "CarregarSíndico", controller: "BaseAdmin", buttonClass: "primary")
-                    }
-                    @if (ViewBag.Perfil == "ADM" || (Int32)Session["UsuProprietario"] == 1)
-                    {
-                        @Html.ButtonLinkIndex(text: "Proprietário", action: "MontarTelaDashboardProprietario", controller: "BaseAdmin", buttonClass: "primary")
-                    }
-                    @if (ViewBag.Perfil == "ADM" || (Int32)Session["UsuFuncionario"] == 1)
-                    {
-                        @Html.ButtonLinkIndex(text: "Funcionário", action: "MontarTelaDashboardFuncionario", controller: "BaseAdmin", buttonClass: "primary")
-                    }
+
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-12">
@@ -149,14 +135,6 @@
                             </div>
                         </div>
                     </div>
-                    @if (ViewBag.Perfil == "ADM" || (Int32)Session["UsuSindico"] == 1)
-                    {
-                        @Html.ButtonLinkIndex(text: "Financeiro", action: "MontarTelaDashboardFinanceiro", controller: "BaseAdmin", buttonClass: "success")
-                    }
-                    @if (ViewBag.Perfil == "ADM" || (Int32)Session["UsuSindico"] == 1)
-                    {
-                        @Html.ButtonLinkIndex(text: "Administração", action: "MontarTelaDashboardAdministracao", controller: "BaseAdmin", buttonClass: "success")
-                    }
                 </div>
             </div>
 

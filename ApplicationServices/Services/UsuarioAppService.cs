@@ -94,6 +94,12 @@ namespace ApplicationServices.Services
             return _usuarioService.GetAnexoById(id);
         }
 
+        /// <summary>Validates the create.</summary>
+        /// <param name="usuario">The usuario.</param>
+        /// <param name="usuarioLogado">The usuario logado.</param>
+        /// <returns>
+        ///   <br />
+        /// </returns>
         public Int32 ValidateCreate(USUARIO usuario, USUARIO usuarioLogado)
         {
             try
@@ -558,6 +564,7 @@ namespace ApplicationServices.Services
                 noti.USUA_CD_ID = usuario.USUA_CD_ID;
                 noti.NOTI_IN_STATUS = 1;
                 noti.NOTI_IN_NIVEL = 1;
+                noti.NOTI_IN_ANEXOS = 0;
                 Int32 volta1 = _notiService.Create(noti);
 
 
@@ -637,6 +644,7 @@ namespace ApplicationServices.Services
             noti.USUA_CD_ID = usuario.USUA_CD_ID;
             noti.NOTI_IN_STATUS = 1;
             noti.NOTI_IN_NIVEL = 1;
+            noti.NOTI_IN_ANEXOS = 0;
             Int32 volta1 = _notiService.Create(noti);
 
             // Recupera template e-mail
