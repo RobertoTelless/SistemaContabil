@@ -4,36 +4,75 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="60275ba755ff4e87b437d98cbb67de72" Name="Diagram1">
-        <EntityTypeShape EntityType="DB_ContabilModel.AGENDA" Width="1.5" PointX="7.5" PointY="25.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.AGENDA_ANEXO" Width="1.5" PointX="9.75" PointY="22.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.ASSINANTE" Width="1.5" PointX="3" PointY="26.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.CARGO" Width="1.5" PointX="8.25" PointY="36.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.CATEGORIA_AGENDA" Width="1.5" PointX="5.25" PointY="20.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.CATEGORIA_NOTIFICACAO" Width="1.5" PointX="5.25" PointY="23.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.CATEGORIA_TELEFONE" Width="1.5" PointX="5.25" PointY="26.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.CATEGORIA_USUARIO" Width="1.5" PointX="5.25" PointY="29.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.CONFIGURACAO" Width="1.5" PointX="5.25" PointY="32.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.LOG" Width="1.5" PointX="12.75" PointY="32.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.NOTICIA" Width="1.5" PointX="5.25" PointY="37" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.NOTICIA_COMENTARIO" Width="1.5" PointX="12.75" PointY="36.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.NOTIFICACAO" Width="1.5" PointX="10.5" PointY="25.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.NOTIFICACAO_ANEXO" Width="1.5" PointX="12.75" PointY="26.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.PERFIL" Width="1.5" PointX="8.25" PointY="39.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.PERIODICIDADE" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.PERIODICIDADE_TAREFA" Width="1.5" PointX="5.25" PointY="41.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.TAREFA" Width="1.5" PointX="15.75" PointY="36.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.TAREFA_ACOMPANHAMENTO" Width="1.5" PointX="18" PointY="35.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.TAREFA_ANEXO" Width="1.5" PointX="18" PointY="41.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.TELEFONE" Width="1.5" PointX="7.5" PointY="31.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.TEMPLATE" Width="1.5" PointX="5.25" PointY="44.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.TIPO_AGENDA" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.TIPO_MENSAGEM" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.TIPO_PESSOA" Width="1.5" PointX="0.75" PointY="27" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.TIPO_TAREFA" Width="1.5" PointX="5.25" PointY="49.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.UF" Width="1.5" PointX="0.75" PointY="29.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.USUARIO" Width="1.5" PointX="10.5" PointY="31.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DB_ContabilModel.USUARIO_ANEXO" Width="1.5" PointX="12.75" PointY="48.75" IsExpanded="true" />
+      <Diagram DiagramId="58d153cdca524a8a8e745646ab9b730b" Name="Diagram1">
+        <EntityTypeShape EntityType="DB_ContabilModel.AGENDA" Width="1.5" PointX="7.5" PointY="71.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.AGENDA_ANEXO" Width="1.5" PointX="9.75" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.ASSINANTE" Width="1.5" PointX="3" PointY="74.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.BANCO" Width="1.5" PointX="5.25" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CARGO" Width="1.5" PointX="8.25" PointY="100.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CATEGORIA_AGENDA" Width="1.5" PointX="5.25" PointY="62.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CATEGORIA_CLIENTE" Width="1.5" PointX="5.25" PointY="65.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CATEGORIA_FORNECEDOR" Width="1.5" PointX="5.25" PointY="68.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CATEGORIA_NOTIFICACAO" Width="1.5" PointX="5.25" PointY="71.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CATEGORIA_PRODUTO" Width="1.5" PointX="5.25" PointY="74.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CATEGORIA_TELEFONE" Width="1.5" PointX="5.25" PointY="78.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CATEGORIA_USUARIO" Width="1.5" PointX="5.25" PointY="81.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CENTRO_CUSTO" Width="1.5" PointX="7.5" PointY="87.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CLIENTE" Width="1.5" PointX="13.5" PointY="68.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CLIENTE_ANEXO" Width="1.5" PointX="15.75" PointY="65.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CLIENTE_CONTATO" Width="1.5" PointX="15.75" PointY="61.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CLIENTE_QUADRO_SOCIETARIO" Width="1.5" PointX="15.75" PointY="89.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CLIENTE_REFERENCIA" Width="1.5" PointX="15.75" PointY="93.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CONFIGURACAO" Width="1.5" PointX="5.25" PointY="88.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CONTA_BANCO" Width="1.5" PointX="10.5" PointY="68.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CONTA_BANCO_CONTATO" Width="1.5" PointX="12.75" PointY="64.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.CONTA_BANCO_LANCAMENTO" Width="1.5" PointX="12.75" PointY="60.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.FILIAL" Width="1.5" PointX="8.25" PointY="63.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.FORNECEDOR" Width="1.5" PointX="10.5" PointY="75.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.FORNECEDOR_ANEXO" Width="1.5" PointX="12.75" PointY="89.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.FORNECEDOR_COMENTARIO" Width="1.5" PointX="18.75" PointY="82.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.FORNECEDOR_CONTATO" Width="1.5" PointX="12.75" PointY="92.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.FORNECEDOR_MENSAGEM" Width="1.5" PointX="21.75" PointY="84.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.FORNECEDOR_QUADRO_SOCIETARIO" Width="1.5" PointX="12.75" PointY="97" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.GRUPO_CC" Width="1.5" PointX="5.25" PointY="101.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.LOG" Width="1.5" PointX="21.75" PointY="80.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.NOMENCLATURA_BRAS_SERVICOS" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.NOTICIA" Width="1.5" PointX="5.25" PointY="105" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.NOTICIA_COMENTARIO" Width="1.5" PointX="15.75" PointY="97.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.NOTIFICACAO" Width="1.5" PointX="7.5" PointY="77.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.NOTIFICACAO_ANEXO" Width="1.5" PointX="9.75" PointY="97.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.PERFIL" Width="1.5" PointX="8.25" PointY="103.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.PERIODICIDADE" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.PERIODICIDADE_TAREFA" Width="1.5" PointX="5.25" PointY="109.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.PRECO_PRODUTO" Width="1.5" PointX="18.75" PointY="72.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.PRODUTO" Width="1.5" PointX="16.5" PointY="69.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.PRODUTO_ANEXO" Width="1.5" PointX="18.75" PointY="76.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.PRODUTO_BARCODE" Width="1.5" PointX="18.75" PointY="80" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.PRODUTO_ESTOQUE_FILIAL" Width="1.5" PointX="21.75" PointY="72.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.PRODUTO_FORNECEDOR" Width="1.5" PointX="21.75" PointY="77.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.PRODUTO_GRADE" Width="1.5" PointX="18.75" PointY="86.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.PRODUTO_KIT" Width="1.5" PointX="18.75" PointY="90.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.PRODUTO_ORIGEM" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.PRODUTO_TABELA_PRECO" Width="1.5" PointX="18.75" PointY="68.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.REGIME_TRIBUTARIO" Width="1.5" PointX="11.25" PointY="56.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.SUBCATEGORIA_PRODUTO" Width="1.5" PointX="7.5" PointY="82.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.SUBGRUPO" Width="1.5" PointX="7.5" PointY="92.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TAREFA" Width="1.5" PointX="15.75" PointY="100.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TAREFA_ACOMPANHAMENTO" Width="1.5" PointX="18" PointY="94.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TAREFA_ANEXO" Width="1.5" PointX="18" PointY="105.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TELEFONE" Width="1.5" PointX="13.5" PointY="83.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TEMPLATE" Width="1.5" PointX="5.25" PointY="113" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TIPO_AGENDA" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TIPO_CONTA" Width="1.5" PointX="8.25" PointY="56.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TIPO_CONTRIBUINTE" Width="1.5" PointX="11.25" PointY="53.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TIPO_GRUPO" Width="1.5" PointX="5.25" PointY="117.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TIPO_MENSAGEM" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TIPO_PESSOA" Width="1.5" PointX="0.75" PointY="74.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.TIPO_TAREFA" Width="1.5" PointX="5.25" PointY="120" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.UF" Width="1.5" PointX="0.75" PointY="78.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.UNIDADE" Width="1.5" PointX="14.25" PointY="56.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.USUARIO" Width="1.5" PointX="10.5" PointY="85.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_ContabilModel.USUARIO_ANEXO" Width="1.5" PointX="12.75" PointY="102.75" IsExpanded="true" />
         <AssociationConnector Association="DB_ContabilModel.FK_AGENDA_ANEXO_AGENDA" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_AGENDA_ASSINANTE" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_AGENDA_CATEGORIA_AGENDA" ManuallyRouted="false" />
@@ -41,24 +80,76 @@
         <AssociationConnector Association="DB_ContabilModel.FK_AGENDA_USUARIO1" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_ASSINANTE_TIPO_PESSOA" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_ASSINANTE_UF" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_BANCO_ASSINANTE" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_CATEGORIA_AGENDA_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CATEGORIA_CLIENTE_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CATEGORIA_FORNECEDOR_ASSINANTE" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_CATEGORIA_NOTIFICACAO_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CATEGORIA_PRODUTO_ASSINANTE" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_CATEGORIA_TELEFONE_ASSINANTE" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_CATEGORIA_USUARIO_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CENTRO_CUSTO_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CLIENTE_ASSINANTE" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_CONFIGURACAO_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CONTA_BANCO_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_FILIAL_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_FORNECEDOR_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_GRUPO_CC_ASSINANTE" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_LOG_ASSINANTE" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_NOTICIA_ASSINANTE" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_NOTIFICACAO_ASSINANTE" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_PERIODICIDADE_TAREFA_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_PRODUTO_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_SUBCATEGORIA_PRODUTO_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_SUBGRUPO_ASSINANTE" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_TAREFA_ASSINANTE" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_TELEFONE_ASSINANTE" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_TEMPLATE_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_TIPO_GRUPO_ASSINANTE" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_TIPO_TAREFA_ASSINANTE" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_USUARIO_ASSINANTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CONTA_BANCO_BANCO" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_USUARIO_CARGO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CLIENTE_CATEGORIA_CLIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_FORNECEDOR_CATEGORIA_FORNECEDOR" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_NOTIFICACAO_CATEGORIA_NOTIFICACAO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_PRODUTO_CATEGORIA_PRODUTO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_SUBCATEGORIA_PRODUTO_CATEGORIA_PRODUTO" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_TELEFONE_CATEGORIA_TELEFONE" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_USUARIO_CATEGORIA_USUARIO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CENTRO_CUSTO_GRUPO_CC" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CENTRO_CUSTO_SUBGRUPO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CLIENTE_ANEXO_CLIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CLIENTE_CONTATO_CLIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CLIENTE_FILIAL" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CLIENTE_QUADRO_SOCIETARIO_CLIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CLIENTE_REFERENCIA_CLIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CLIENTE_REGIME_TRIBUTARIO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CLIENTE_TIPO_CONTRIBUINTE" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CLIENTE_TIPO_PESSOA" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CLIENTE_UF" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CLIENTE_UF1" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CLIENTE_USUARIO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CONTA_BANCO_CONTATO_CONTA_BANCO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CONTA_BANCO_LANCAMENTO_CONTA_BANCO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_CONTA_BANCO_TIPO_CONTA" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_FILIAL_UF" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_FORNECEDOR_FILIAL" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_PRECO_PRODUTO_FILIAL" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_PRODUTO_ESTOQUE_FILIAL_FILIAL" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_PRODUTO_FILIAL" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_PRODUTO_TABELA_PRECO_FILIAL" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_FORNECEDOR_ANEXO_FORNECEDOR" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_FORNECEDOR_COMENTARIO_FORNECEDOR" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_FORNECEDOR_CONTATO_FORNECEDOR" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_FORNECEDOR_MENSAGEM_FORNECEDOR" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_FORNECEDOR_QUADRO_SOCIETARIO_FORNECEDOR" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_FORNECEDOR_TIPO_PESSOA" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_FORNECEDOR_UF" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_PRODUTO_FORNECEDOR_FORNECEDOR" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_FORNECEDOR_COMENTARIO_USUARIO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_FORNECEDOR_MENSAGEM_USUARIO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_SUBGRUPO_GRUPO_CC" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_LOG_USUARIO" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_NOTICIA_COMENTARIO_NOTICIA" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_NOTICIA_COMENTARIO_USUARIO" ManuallyRouted="false" />
@@ -66,6 +157,17 @@
         <AssociationConnector Association="DB_ContabilModel.FK_NOTIFICACAO_USUARIO" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_USUARIO_PERFIL" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_TAREFA_PERIODICIDADE_TAREFA" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_PRECO_PRODUTO_PRODUTO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_PRODUTO_ANEXO_PRODUTO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_PRODUTO_BARCODE_PRODUTO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_PRODUTO_ESTOQUE_FILIAL_PRODUTO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_PRODUTO_FORNECEDOR_PRODUTO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_PRODUTO_GRADE_PRODUTO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_PRODUTO_KIT_PRODUTO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_PRODUTO_KIT_PRODUTO1" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_PRODUTO_SUBCATEGORIA_PRODUTO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_PRODUTO_TABELA_PRECO_PRODUTO" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_ContabilModel.FK_PRODUTO_UNIDADE" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_TAREFA_ACOMPANHAMENTO_TAREFA" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_TAREFA_ANEXO_TAREFA" ManuallyRouted="false" />
         <AssociationConnector Association="DB_ContabilModel.FK_TAREFA_TIPO_TAREFA" ManuallyRouted="false" />

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ERP_Condominios_Solution.App_Start {
+namespace Presentation_Solution.App_Start {
     using System;
     
     

@@ -271,19 +271,49 @@
     <Compile Include="Model\ASSINANTE.cs">
       <DependentUpon>Contabil_Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\BANCO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\CARGO.cs">
       <DependentUpon>Contabil_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\CATEGORIA_AGENDA.cs">
       <DependentUpon>Contabil_Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\CATEGORIA_CLIENTE.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CATEGORIA_FORNECEDOR.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\CATEGORIA_NOTIFICACAO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CATEGORIA_PRODUTO.cs">
       <DependentUpon>Contabil_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\CATEGORIA_TELEFONE.cs">
       <DependentUpon>Contabil_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\CATEGORIA_USUARIO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CENTRO_CUSTO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CLIENTE.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CLIENTE_ANEXO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CLIENTE_CONTATO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CLIENTE_QUADRO_SOCIETARIO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CLIENTE_REFERENCIA.cs">
       <DependentUpon>Contabil_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\CONFIGURACAO.cs">
@@ -304,7 +334,43 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Contabil_Model.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Model\CONTA_BANCO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CONTA_BANCO_CONTATO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CONTA_BANCO_LANCAMENTO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FILIAL.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FORNECEDOR.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FORNECEDOR_ANEXO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FORNECEDOR_COMENTARIO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FORNECEDOR_CONTATO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FORNECEDOR_MENSAGEM.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FORNECEDOR_QUADRO_SOCIETARIO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\GRUPO_CC.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\LOG.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NOMENCLATURA_BRAS_SERVICOS.cs">
       <DependentUpon>Contabil_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\NOTICIA.cs">
@@ -328,6 +394,45 @@
     <Compile Include="Model\PERIODICIDADE_TAREFA.cs">
       <DependentUpon>Contabil_Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\PRECO_PRODUTO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PRODUTO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PRODUTO_ANEXO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PRODUTO_BARCODE.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PRODUTO_ESTOQUE_FILIAL.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PRODUTO_FORNECEDOR.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PRODUTO_GRADE.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PRODUTO_KIT.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PRODUTO_ORIGEM.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PRODUTO_TABELA_PRECO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\REGIME_TRIBUTARIO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SUBCATEGORIA_PRODUTO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SUBGRUPO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\TAREFA.cs">
       <DependentUpon>Contabil_Model.tt</DependentUpon>
     </Compile>
@@ -346,6 +451,15 @@
     <Compile Include="Model\TIPO_AGENDA.cs">
       <DependentUpon>Contabil_Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\TIPO_CONTA.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TIPO_CONTRIBUINTE.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TIPO_GRUPO.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\TIPO_MENSAGEM.cs">
       <DependentUpon>Contabil_Model.tt</DependentUpon>
     </Compile>
@@ -356,6 +470,9 @@
       <DependentUpon>Contabil_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\UF.cs">
+      <DependentUpon>Contabil_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UNIDADE.cs">
       <DependentUpon>Contabil_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\USUARIO.cs">
@@ -393,6 +510,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Model\Contabil_Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
