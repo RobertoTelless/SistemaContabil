@@ -42,7 +42,5 @@ namespace ERP_Condominios_Solution.ViewModels
         public virtual CATEGORIA_AGENDA CATEGORIA_AGENDA { get; set; }
         public virtual USUARIO USUARIO { get; set; }
         public virtual USUARIO USUARIO1 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<AGENDA_VINCULO> AGENDA_VINCULO { get; set; }
     }
 }

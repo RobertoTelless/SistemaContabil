@@ -46,7 +46,5 @@ namespace ERP_Condominios_Solution.ViewModels
         public Nullable<int> CONF_IN_LIMITE_HORA_VEICULO { get; set; }
 
         public virtual ASSINANTE ASSINANTE { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CONFIGURACAO_ASSOCIACAO> CONFIGURACAO_ASSOCIACAO { get; set; }
     }
 }

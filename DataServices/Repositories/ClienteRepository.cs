@@ -64,7 +64,7 @@ namespace DataServices.Repositories
             }
             if (!String.IsNullOrEmpty(razao))
             {
-                query = query.Where(p => p.CLIE_NM_RAZAO_SOCIAL.Contains(razao));
+                query = query.Where(p => p.CLIE_NM_RAZAO.Contains(razao));
             }
             if (!String.IsNullOrEmpty(nome))
             {

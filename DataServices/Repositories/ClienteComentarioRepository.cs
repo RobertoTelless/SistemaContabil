@@ -20,7 +20,7 @@ namespace DataServices.Repositories
 
         public CLIENTE_ANOTACAO GetItemById(Int32 id)
         {
-            IQueryable<CLIENTE_ANOTACAO> query = Db.CLIENTE_ANOTACAO.Where(p => p.CLAT_CD_ID == id);
+            IQueryable<CLIENTE_ANOTACAO> query = Db.CLIENTE_ANOTACAO.Where(p => p.CLAN_CD_ID == id);
             return query.FirstOrDefault();
         }
     }

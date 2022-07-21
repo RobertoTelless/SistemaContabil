@@ -275,8 +275,6 @@
     <Compile Include="Extensions\HMTLHelperExtensions.cs" />
     <Compile Include="Extensions\MVCButtonExtensions.cs" />
     <Compile Include="Extensions\WebMvcExtensions.cs" />
-    <Compile Include="Filters\LoginAuthenticationFilter.cs" />
-    <Compile Include="Filters\ProfileAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -3015,6 +3013,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Filters\" />
     <Folder Include="Imagens\1\Agenda\13\Anexos\" />
     <Folder Include="Imagens\1\Agenda\15\Anexos\" />
     <Folder Include="Imagens\1\Agenda\1\Anexos\" />
